@@ -1,25 +1,9 @@
-// vite.config.ts
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-
-export default defineConfig({
-  plugins: [react()],
+<!DOCTYPE html>
+<html>
+<body>
+  <div id="root"></div>
   
-  // *** 請修改這裡 ***
-  base: '/HLTDL/', // 更改為您的倉庫名稱，並以斜線結尾
+  <script type="module" src="%BASE_URL%index.tsx"></script> 
   
-  define: {
-    // ... 其他 define 設定 ...
-    'process.env': {}
-  },
-  server: {
-    // ... 其他 server 設定 ...
-    host: '0.0.0.0',
-    port: 8080,
-  },
-  preview: {
-    // ... 其他 preview 設定 ...
-    host: '0.0.0.0',
-    port: 8080,
-  }
-});
+</body>
+</html>
